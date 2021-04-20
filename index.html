@@ -11,39 +11,45 @@
     <title>Nais cars</title>
 </head>
 <body>
-    <h1 class="title">
+    <!-- TITOLOZZO GARAGE -->
+    <h1 class="title" id="scheggia">
         <i class="fas fa-car"></i>
         Scheggia's Garage
         <i class="fas fa-car"></i>
     </h1>
 
+    <!-- SMOL NAV MENU -->
     <div class="who">
         <ul>
-            <li><a href="#"></a>Chi Sono</li>
-            <li><a href="#"></a>Cosa faccio</li>
-            <li><a href="#"></a>Dove sono</li>
-            <li><a href="#"></a>Contattami</li>
+            <li><a href="#"></a><i class="fas fa-female"></i>Chi Sono</li>
+            <li><a href="#"></a><i class="fas fa-tachometer-alt"></i>Cosa faccio</li>
+            <li><a href="#"></a><i class="fas fa-search-location"></i>Dove sono</li>
+            <li><a href="#"></a><i class="far fa-comments"></i>Contattami</li>
         </ul>
     </div>
 
+    <!-- PRESENTATION -->
     <div class="presentation">
-        <h1>My cars!</h1>
+        <h1 class="neon">Discover my cars!</h1>
         <p>Here's the collection of my beloved jdm cars. each one of them has a unique and beautiful story! <br>
             Read more about them in my bio!
         </p>
     </div>
+
+    <!-- CARS CAROUSEL -->
     <div class="container">
         
+        <!-- WRAPPER -->
         <div class="slider-wrapper">
             <div class="prev">
-                <!-- qua ci metto la freccia < -->
+                <!-- ARROW -->
                 <i class="fas fa-angle-double-left"></i>
             </div>
 
             
             <!-- forse andava bene anche un ul ma l'imp è che sia qualcosa dentro a un contenitore -->
             <div class="car-names">
-                <!-- nome delle macchine -->
+                <!-- CARS NAMES -->
                 <div class="active first">Lancer Evo, Mitsubishi</div>
                 <div>Mx5 NA, Mazda</div>
                 <div>GtR-35, Nissan</div>
@@ -57,7 +63,7 @@
             </div>
 
             <div class="images">
-                <!-- qua ci sono le img -->
+                <!-- CARS IMGS -->
                 <img class="active first" src="assets/css/img/lancer evo.jpg" alt="lancer evo mitsubishi">
                 <img src="assets/css/img/na-mx5.jpg" alt="mazda mz5 na">
                 <img src="assets/css/img/nissan-r35.jpg" alt="nissan r35">
@@ -71,12 +77,12 @@
             </div>
 
             <div class="next">
-                <!-- qua ci metto la freccia > -->
+                <!-- ARROW > -->
                 <i class="fas fa-angle-double-right"></i>
             </div>
 
             <div class="nav">
-                <!-- qua ci metto i pallini della nav -->
+                <!-- SMOL HEARTS -->
                 <i class="far fa-heart active first"></i>
                 <i class="far fa-heart"></i>
                 <i class="far fa-heart"></i>
@@ -91,6 +97,13 @@
 
         </div>
     </div>
+
+
+    <div class='console-container'>
+        <span id='text'></span>
+        <div class='console-underscore' id='console'>&#95;</div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

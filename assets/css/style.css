@@ -17,6 +17,13 @@ body{
     padding: 15px;
     font-size: 70px;
     font-family: 'Lobster', cursive;
+    animation: color-change 1s infinite
+}
+
+@keyframes color-change {
+    0% { color: rgb(230,81,0); }
+    70% { color: rgb(255,204,128); }
+    100% { color: rgb(230,81,0);}
 }
 
 .who ul {
@@ -28,6 +35,7 @@ body{
     display: inline-block;
     color: white;
     padding: 0 15px;
+    cursor: pointer;
 }
 
 .who li:hover{
@@ -49,6 +57,20 @@ body{
     font-family: 'Lobster', cursive;
     color: rgb(230,81,0);
 }
+
+.neon {
+    color: #fff;
+    text-shadow:
+      0 0 3px #fff,
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px rgb(255,167,38),
+      0 0 40px rgb(255,167,38),
+      0 0 45px rgb(255,167,38),
+      0 0 50px rgb(255,167,38),
+      0 0 75px rgb(255,167,38);
+}
+
 
 .car-names{
     position: absolute;
@@ -104,7 +126,7 @@ body{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 60px;
     cursor: pointer;
 }
 
@@ -130,4 +152,22 @@ body{
 .nav > i.active{
     color: rgb(230,81,0);
     font-weight: 900;
+}
+
+.console-container {
+    font-size:1em;
+    text-align:center;
+    height:30px;
+    width:600px;
+    display:block;
+    position:absolute;
+    color:white;
+    margin:auto;
+}
+
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
 }
