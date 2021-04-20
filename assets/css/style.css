@@ -1,0 +1,23 @@
+.slider-wrapper .images{
+    height: 100%;
+    text-align: center;
+}
+
+.slider-wrapper .images img{
+    display: none;
+    height: 100%;
+}
+
+.slider-wrapper .images img.active{
+    display: inline-block;
+}
+
+.prev, .next{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+}
