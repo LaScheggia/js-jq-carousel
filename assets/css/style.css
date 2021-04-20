@@ -4,17 +4,83 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Orbitron', sans-serif;
+    background-image: url(../css/img/garage3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    color: rgb(239,108,0);
+    text-align: center;
+    padding: 15px;
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+}
+
+.who ul {
+    text-decoration: none;
+    text-align: center;
+}
+
+.who li {
+    display: inline-block;
+    color: white;
+    padding: 0 15px;
+}
+
+.who li:hover{
+    text-decoration: underline;
+    color: rgb(230,81,0);
+    background-color: rgba(33, 31, 31, 0.5);
+    border-radius: 25px;
+}
+
+.presentation{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+.presentation h1{
+    font-family: 'Lobster', cursive;
+    color: rgb(230,81,0);
+}
+
+.car-names{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(230,81,0);
+    background: rgba(33, 31, 31, 0.5);
+}
+
+.car-names div{
+    display: none;
+}
+
+.car-names div.active{
+    display: inline-block;
+}
+
 .container{
     display: flex;
     margin: 0 auto;
-    width: 70%;
-    height: 100vh;
+    width: 75%;
+    height: 70vh;
 }
 
 .slider-wrapper{
     position: relative;
-    margin: auto;
     width: 100%;
+    margin-top: 30px;
     height: 80%;
 }
 
@@ -34,7 +100,7 @@
 
 .prev, .next{
     position: absolute;
-    color: rgb(74,20,140);
+    color: rgb(253, 153, 34);
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -53,15 +119,15 @@
     transform: translateX(-50%);
     padding: 20px;
     border-radius: 999px;
-    background: rgb(248,187,208);
+    background: transparent;
 }
 
 .nav > i{
     margin: 0 20px;
-    color: rgb(206,147,216);
+    color: rgb(255,167,38);
 }
 
 .nav > i.active{
-    color: rgb(106,27,154);
+    color: rgb(230,81,0);
     font-weight: 900;
 }
